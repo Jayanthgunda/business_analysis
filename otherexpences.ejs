@@ -1,0 +1,33 @@
+<%- include("header"); -%>
+<div class="onedayincome">
+<form class="onedayincome p-4 p-md-5 border rounded-3 bg-body-tertiary" method="post" action="/otherexpences">
+  <h3 style="text-align: center;"><label for="Heading">Other Expences</label></h3>
+  <div class="form-floating mb-3">
+    <h3><label for="floatingInput">Name</label></h3>
+    <input type="text" name="name" class="form-control" id="floatingInputName" placeholder="Name" required>
+    <label for="floatingInputName"></label>
+  </div>
+    <div class="form-floating mb-3">
+      <h3><label for="floatingInput">Amount</label></h3>
+      <input type="number" name="amount" min="0" class="form-control" id="floatingInputNumber" placeholder="₹Amount" required>
+      <label for="floatingInputNumber"></label>
+    </div>
+
+    <div class="form-floating mb-3">
+      <h3><label for="floatingInput">Description</label></h3>
+      <input type="text" name="description" class="form-control" id="floatingInputDesc" placeholder="Description" required>
+      <label for="floatingInputDesc"></label>
+    </div>
+
+    <div class="form-floating mb-3">
+      <h3> <label for="floatingDate">Date</label></h3> 
+      <input type="date" name="date" class="form-control" id="floatingDate" required>
+    </div>
+
+    <label for="floatingInput"></label> 
+    <button class="w-100 btn btn-lg btn-outline-dark" type="submit">Enter</button>
+    <hr class="my-4">
+    <small class="text-body-secondary">By clicking enter, you entered required information.</small>
+  </form>
+</div>
+<%- include("footer"); -%>

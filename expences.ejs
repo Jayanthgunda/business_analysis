@@ -1,0 +1,23 @@
+<%- include("header"); -%>
+
+<table class="table table-success table-striped">
+    <tr>
+        <th>#</th>
+        <th>Date</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Amount</th>
+    </tr>
+
+  <%   for(let i=0;i<data.length;i++){   %>
+        <tr>
+            <td> <%= i+1  %></td>
+            <td><%= data[i].Date %></td>
+            <td><%= data[i].name %></td>
+            <td><%= data[i].description %></td>
+            <td><%= data[i].amount %>₹</td>
+        </tr>
+        <% } %>
+  </table>
+
+<%- include("footer"); -%>

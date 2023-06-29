@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parnasala</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- Link to bootstrap cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- Link to bootstrap javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <!-- link to font awsome -->
+    <script src="https://kit.fontawesome.com/43124feaf5.js" crossorigin="anonymous"></script>
+    <!-- Local css files to this html -->
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  
+
+<body>
+  <div>
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-info">
+      <a class="navbar-brand" href="#">Parnasala</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <ul class="navbar-nav ms-auto">
+
+            <li class="nav-item mx-4">
+                <a class="nav-link" href="/">Home</a>
+              </li>
+          <li class="nav-item dropdown mx-4">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Data Entry
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/onedayincome">One Day Income</a></li>
+            <li><a class="dropdown-item" href="/otherexpences">Other Expences </a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown mx-4">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Expences/Income
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="/expences">Expences</a></li>
+          <li><a class="dropdown-item" href="/income">Income</a></li>
+        </ul>
+      </li>
+          <li class="nav-item mx-4">
+              <a class="nav-link" href="/owner">Owner</a>
+          </li>
+      </ul>
+ 
+      <form method="post" action="/expences" class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+        <input type="search" name="search" class="form-control form-control-dark text-bg-dark search" placeholder="Search..." aria-label="Search">
+      </form>
+     </div>
+    </nav>
+  </div>
